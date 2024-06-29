@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlertNest - Localisation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="AlertNest Logo">
+            <h1>AlertNest</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="chat.html">Chat</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="localisation.html">Localisation</a></li>
+                <li><a href="community.html">Communauté</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="localisation">
+            <h2>Localisation</h2>
+            <form id="location-form" class="form">
+                <div class="form-group">
+                    <label for="name">Nom:</label>
+                    <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Adresse:</label>
+                    <input type="text" id="address" name="address" placeholder="Votre adresse" required>
+                </div>
+                <div class="form-group">
+                    <button type="button" id="geo-btn" class="btn">Utiliser la Géolocalisation</button>
+                </div>
+                <div class="form-group">
+                    <label for="latitude">Latitude:</label>
+                    <input type="text" id="latitude" name="latitude" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="longitude">Longitude:</label>
+                    <input type="text" id="longitude" name="longitude" readonly>
+                </div>
+                <button type="submit" class="btn">Soumettre</button>
+            </form>
+            <div id="map" class="map"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>À Propos</h3>
+                <p>AlertNest est dédié à améliorer la sécurité et la réactivité en situation d'urgence. Nous utilisons des technologies avancées pour offrir des solutions efficaces et pertinentes.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Liens Utiles</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="chat.html">Chat</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="localisation.html">Localisation</a></li>
+                    <li><a href="community.html">Communauté</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contactez-Nous</h3>
+                <p>Email: contact@alertnest.com</p>
+                <p>Téléphone: +225 12 34 56 78</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 AlertNest. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <script src="localisation.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+</body>
+</html>
